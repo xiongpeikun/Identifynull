@@ -19,7 +19,7 @@ f000=eachcell(:,1); f100=eachcell(:,2); f101=eachcell(:,3); f001=eachcell(:,4);
 f010=eachcell(:,5); f110=eachcell(:,6); f111=eachcell(:,7); f011=eachcell(:,8);
 oa=f000;ob=f100-f000;oc=f010-f000;od=f110-f100-f010+f000; 
 oe=f001-f000;of=f101-f100-f001+f000;og=f011-f010-f001+f000;
-oh=f111-f110-f101-f001+f100+f010+f001-f000;
+oh=f111-f110-f101-f011+f100+f010+f001-f000;
 
 a=oa(1:2,:)';b=ob(1:2,:)';c=oc(1:2,:)';d=od(1:2,:)';e=oe(1:2,:)';f=of(1:2,:)';
 g=og(1:2,:)';h=oh(1:2,:)'; %bx=by=0
